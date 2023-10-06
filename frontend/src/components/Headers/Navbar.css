@@ -1,0 +1,14 @@
+.main-div-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-nav-search{
+    width: 50%;
+    height: 100%;
+    padding: 17px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}

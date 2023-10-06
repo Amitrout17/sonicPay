@@ -1,0 +1,17 @@
+.speech-rec-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speech-rec-main button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div-logo button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

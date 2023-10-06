@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^1.5.0",
     "body-parser": "^1.20.2",
     "cookie-parser": "^1.4.6",
@@ -20,6 +23,7 @@
     "mongoose": "^7.5.2",
     "node-speech-to-text": "^1.0.0",
     "nodemon": "^3.0.1",
+    "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0"
   }
 }

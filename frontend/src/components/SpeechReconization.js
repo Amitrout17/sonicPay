@@ -1,11 +1,32 @@
 import axios from "axios";
-import React, { useState } from "react";
+import "./speech-rec.css";
+import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
+import { faMicrophoneLinesSlash } from "@fortawesome/free-solid-svg-icons";
 
 const SpeechRecognition = () => {
   const [recognition, setRecognition] = useState(null);
   const [transcript, setTranscript] = useState("");
   const isSpeechRecognitionSupported =
     "webkitSpeechRecognition" in window || "SpeechRecognition" in window;
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === "f") {
+        startRecognition();
+      }
+      if (event.key === "j") {
+        stopRecognition();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyPress);
+
+    /* return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    }; */
+  }, []);
 
   const startRecognition = () => {
     if (!isSpeechRecognitionSupported) {
@@ -48,10 +69,34 @@ const SpeechRecognition = () => {
   return (
     <div>
       {isSpeechRecognitionSupported ? (
-        <div>
-          <button onClick={startRecognition}>Start Voice Capture</button>
-          <button onClick={stopRecognition}>Stop Voice Capture</button>
-          <div>{transcript}</div>
+        <div className="speech-rec-main">
+          <button onClick={startRecognition}>
+            <FontAwesomeIcon
+              icon={faMicrophone}
+              style={{
+                padding: "10px",
+              }}
+              size="lg"
+            />
+            Start Voice
+          </button>
+          <input
+            value={transcript}
+            placeholder="click start to Operate.."
+            style={{
+              height: "37px",
+            }}
+          />
+          <button onClick={stopRecognition}>
+            <FontAwesomeIcon
+              icon={faMicrophoneLinesSlash}
+              style={{
+                padding: "10px",
+              }}
+              size="lg"
+            />
+            Stop Voice
+          </button>
         </div>
       ) : (
         <div>Speech recognition is not supported in your browser.</div>
