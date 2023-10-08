@@ -13,6 +13,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
+      - run: npm install
+      - run: npm install --prefix frontend 
       - run: npm run dev
       - run: npm run run frontend
-
