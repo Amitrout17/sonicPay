@@ -20,7 +20,7 @@ jobs:
 
       - name: Start Backend Server
         run: node backend/server.js &
-        background: true  # Run this command in the background
+        background: true  
 
       # Wait for the backend server to be ready
       - name: Wait for Backend Server
