@@ -23,9 +23,9 @@ const SpeechRecognition = () => {
 
     window.addEventListener("keydown", handleKeyPress);
 
-    /* return () => {
+    return () => {
       window.removeEventListener("keydown", handleKeyPress);
-    }; */
+    };
   }, []);
 
   const startRecognition = () => {
@@ -82,7 +82,7 @@ const SpeechRecognition = () => {
           </button>
           <input
             value={transcript}
-            placeholder="click start to Operate.."
+            placeholder="Click start to Operate.."
             style={{
               height: "37px",
             }}
