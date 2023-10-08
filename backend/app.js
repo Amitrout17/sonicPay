@@ -6,9 +6,8 @@ const cors = require("cors");
 
 app.use(express.json());
 
-
 //env file
-require("dotenv").config();
+require("dotenv").config({ path: "backend/config/.env" });
 
 // Frontend port request access
 app.use(
