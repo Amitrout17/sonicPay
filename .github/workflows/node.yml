@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ master ]
 jobs:
-  build:
+  Testing:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,5 +15,5 @@ jobs:
           node-version: '16'
       - run: npm install
       - run: npm install --prefix frontend 
-      - run: npm run dev
-      - run: npm run run frontend
+      - run: node backend/server.js
+      - run: npm start --prefix frontend
