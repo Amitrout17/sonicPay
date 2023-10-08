@@ -17,8 +17,5 @@ jobs:
       - run: npm install
       - run: npm install --prefix frontend 
       - run: npm start --prefix frontend & npx wait-on http://localhost:3000
-        run: node backend/server.js &
-        background: true  
-        run: npx wait-on http://localhost:4000
 
 
