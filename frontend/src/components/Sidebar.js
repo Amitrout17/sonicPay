@@ -1,33 +1,53 @@
 import React from 'react';
+import { BsHouseDoorFill, BsBank, BsCurrencyRupee,BsCoin, BsReception4,BsPersonSquare,  BsArrowBarLeft } from 'react-icons/bs';
 
 function Sidebar() {
   return (
     <div>
       <header>
-        <h1></h1>
         <div class="sidebar">
-          <h2>Systummmm</h2>
           <ul>
-            <li style={{ marginBottom: '65px' }}>
-              <a href="#">Home</a>
-            </li>
-            <li style={{ marginBottom: '65px' }}>
-              <a href="#">Balance Enquiry</a>
-            </li>
-            <li style={{ marginBottom: '65px' }}>
-              <a href="#">Bank Statement</a>
-            </li>
-            <li style={{ marginBottom: '65px' }}>
-              <a href="#">Transfer Money</a>
-            </li>
-            <li style={{ marginBottom: '65px' }}>
-              <a href="#">Loan Enquiry</a>
-            </li>
-            <li style={{ marginBottom: '65px' }}>
-              <a href="#">Account</a>
+            <li>
+              <div>
+                <a href= "/Home"> Home</a>
+                <BsHouseDoorFill style={{ color: 'black', fontSize: '25px' }} />
+              </div>
             </li>
             <li>
-              <a href="#">Log out</a>
+              <div >
+                <a href="/balance-enquiry">Balance Enquiry</a>
+                <BsCurrencyRupee style={{ color: 'black', fontSize: '25px' }} />
+              </div>
+            </li>
+            <li>
+              <div >
+                <a href="/bank statement">Bank Statement</a>
+                <BsBank style={{ color: 'black', fontSize: '25px' }} />
+              </div>
+            </li>
+            <li>
+              <div >
+                <a href="/transfer money">Transfer Money</a>
+                <BsCoin style={{ color: 'black', fontSize: '25px' }} />
+              </div>
+            </li>
+             <li>
+               <div>
+              <a href="/loan enquiry"> Loan Enquiry </a>
+                <BsReception4 style={{ color: 'black', fontSize: '25px' }} /> 
+                </div>
+            </li>
+            <li>
+               <div>
+              <a href="/account"> Account </a>
+                <BsPersonSquare style={{ color: 'black', fontSize: '25px' }} /> 
+                </div>
+            </li>
+            <li>
+              <div>
+              <a href="/Log out"> Log Out </a>
+                <BsArrowBarLeft style={{ color: 'black', fontSize: '25px' }} /> 
+              </div>
             </li>
           </ul>
         </div>
