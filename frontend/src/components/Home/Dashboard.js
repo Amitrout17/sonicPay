@@ -7,8 +7,8 @@ import { BsHouseDoorFill, BsApple, BsArrowUpRightCircle, BsPersonCircle } from '
 function Dashboard() {
   return (
     <>
-      <Navbar />
-      <Sidebar />
+{/*       <Navbar />
+ */}      <Sidebar />
     </>
   );
 }

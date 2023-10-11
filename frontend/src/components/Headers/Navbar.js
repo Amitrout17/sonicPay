@@ -9,13 +9,6 @@ function Navbar() {
   return (
     <>
       <div className="main-div-logo">
-        <img
-          src={Logo}
-          style={{
-            width: "8%",
-          }}
-          alt="logo.png"
-        />
         <input
           type="text"
           placeholder="Search  Anything  ..."

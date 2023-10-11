@@ -1,0 +1,124 @@
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: #242745;
+    max-width: 260px;
+    height: 100vh;
+    font-size: 15px;
+    overflow: scroll;
+}
+
+.sub-headings {
+    color: #a0a0ac;
+    font-size: 13px;
+    padding: 20px 28px 6px;
+    margin: 0;
+    margin-top: 25px;
+    
+}
+
+
+/* new css */
+
+.sub-headings span {
+    color: #a0a0ac;
+    font-size: 13px;
+    /*     padding: 20px 28px 6px;
+ */
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.li-sidebar-internal {
+    margin: 10px 0px;
+}
+
+.li-sidebar-internal a {
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0px 14px;
+    padding: 8px 35px 8px 16px;
+}
+
+.li-sidebar-internal a svg {
+    margin-right: 10px;
+}
+
+.li-sidebar-internal a div {
+    color: #c9c8ce;
+}
+
+.logo-sidebar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding-top: 10px;
+}
+
+
+.logo-sidebar p {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Hide the scrollbar for elements with overflow: scroll */
+.sidebar {
+    overflow: hidden;
+    /* Hide the scrollbar */
+    position: relative;
+    /* Create a positioning context for the pseudo-elements */
+}
+
+/* Create a pseudo-element to act as the scrollbar */
+.sidebar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    /* Adjust the width to match your design */
+    height: 100%;
+    background-color: #fff;
+    /* Set the background color to match your background */
+    z-index: 1;
+    /* Place it on top of the content */
+}
+
+/* Style the content inside the scrollable element */
+.sidebar>div {
+    padding-right: 12px;
+    /* Add padding to accommodate the pseudo-scrollbar */
+}
+
+/* Hide the scrollbar thumb (only necessary for WebKit/Blink browsers like Chrome) */
+.sidebar::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+/* Hide the scrollbar track (only necessary for WebKit/Blink browsers like Chrome) */
+.sidebar::-webkit-scrollbar-track {
+    display: none;
+}
+
+
+.li-sidebar-internal :hover {
+    background: linear-gradient(72.47deg, #7367f0 22.16%, rgba(115, 103, 240, 0.7) 76.47%);
+    color: white;
+}
+
+.logo-sidebar img{
+    width: 20%;  
+}
