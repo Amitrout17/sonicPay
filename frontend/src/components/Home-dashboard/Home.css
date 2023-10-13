@@ -1,0 +1,9 @@
+.dashboard-home-sidebar {
+    float: left;
+}
+
+.internal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

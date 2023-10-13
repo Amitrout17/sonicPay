@@ -78,14 +78,15 @@ const SpeechRecognition = () => {
               }}
               size="lg"
             />
-            Start Voice
           </button>
+          {/* Hiding input for ui  */}
           <input
             value={transcript}
             placeholder="Click start to Operate.."
             style={{
               height: "37px",
             }}
+            disabled 
           />
           <button onClick={stopRecognition}>
             <FontAwesomeIcon
@@ -95,7 +96,6 @@ const SpeechRecognition = () => {
               }}
               size="lg"
             />
-            Stop Voice
           </button>
         </div>
       ) : (

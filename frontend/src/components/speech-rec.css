@@ -9,16 +9,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 12px;
+    padding-right: 10px;
 }
 
 .speech-rec-main button {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    border: 1px solid ;
+    margin: 2px;
 }
 
 .main-div-logo button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.speech-rec-main input{
+    background: white;
+    border: 1px solid black;
 }

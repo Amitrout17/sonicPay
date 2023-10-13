@@ -1,14 +1,32 @@
-.main-div-logo{
+.main-div-logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #f8f7fa;
+    padding-bottom: 20px;
 }
-.input-nav-search{
+
+.input-nav-search {
     width: 50%;
     height: 100%;
     padding: 17px;
-    border: 2px solid grey;
-    border-radius: 10px;
+    border: 0;
     text-align: center;
     text-transform: uppercase;
+}
+
+.input-nav-search {
+    margin: 16px 24px 0px;
+    border: none;
+    /* Remove the default border */
+    outline: none;
+    /* Remove the outline when the input is focused */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Add a minimal shadow effect */
+    text-align: left;
+    height: 56px;
+    text-transform: capitalize;
+    font-size: medium;
+    width: 100%;
+    border-radius: 4px;
 }

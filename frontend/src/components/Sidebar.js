@@ -7,6 +7,7 @@ import {
   BsReception4,
   BsPersonSquare,
   BsArrowBarLeft,
+  BsSearch,
 } from "react-icons/bs";
 import Logo from "../../src/image/logo.png";
 
@@ -26,7 +27,7 @@ function Sidebar() {
               <span>Dashboard</span>
             </li>
             <li className="li-sidebar-internal">
-              <a href="/Home">
+              <a href="/">
                 <BsHouseDoorFill
                   style={{ color: "white", height: "22.4px", width: "22px" }}
                   className="react-icons"
